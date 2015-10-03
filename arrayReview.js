@@ -3,7 +3,11 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
+  var last = function(){
+  	return threeItems.pop();
+  }
 
+  console.log(last());
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -15,6 +19,12 @@ var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
 
+  for (var i=0; i<evenArray.length; i++){
+  	if (evenArray[i] % 2 === 0){
+  		evenArray.splice(i,1);
+  	}
+  }
+  console.log(evenArray.length);
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -27,6 +37,18 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
+  function checkarray (fn,array){
+  	for (var i = 0; i<array.length; i++){
+  		if (fn == array[i]){
+  			console.log(true);
+  		}
+  		else{
+  			console.log(false);
+  		}
+  	}
+  }
+
+  checkarray(console.log(getRandomArbitrary()),randomArray);
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -38,7 +60,9 @@ var first = [1,2,3,4,5];
 var second;
 
   //code here
-
+second = first.slice(0);
+second.push(6);
+second.push(7);
 alert(first) //[1,2,3,4,5];
 alert(second) //[1,2,3,4,5,6,7];
 
@@ -52,7 +76,9 @@ alert(second) //[1,2,3,4,5,6,7];
 var sentence = "Dev Mountain is the best"
 
   //code here
-
+var longest =function(sentence){
+	
+};
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
